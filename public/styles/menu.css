@@ -1,0 +1,128 @@
+/*Root e imports*/
+
+:root{
+    --negro: #000;
+    --lavanda:rgb(230, 230, 250);
+    --violeta-medio:rgb(147, 112, 219);
+    --violeta-oscuro: rgb(102, 51, 153);
+    --violeta-azulado: rgb(138, 43, 226);
+    --dark-orchid: rgb(153, 50, 204);
+    --magenta-oscuro: rgb(139, 0, 139);
+    --violeta-suave: rgb(158, 139, 216);
+    --rojo: #ff0000;
+    --letras-titulo: #fff;
+   
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@800&family=Rubik:ital,wght@0,400;1,700&display=swap');
+
+/*Globales*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: var(--negro);
+}
+ul{
+    list-style: none;
+}
+.menu-grande-header ul{
+    display: none;
+}
+main{
+    padding-top: 85px;
+    
+}
+
+
+header{
+        height: 80px;
+        width: 100%;    
+
+        position: fixed;
+
+        background-color: var(--violeta-suave);
+        border-bottom: 1px solid var(--violeta-oscuro);
+        
+    }
+.titulo{
+    font-family: Circular, Arial, sans-serif;
+        padding-left: 20px;
+        font-size: 3em;
+        
+}
+.titulo a{
+    color: var(--letras-titulo);
+}
+.menu-grande-header{
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+       padding-top: 10px;
+
+}
+.fa-bars{
+    padding-right: 20px;
+    color: var(--letras-titulo);
+    font-size: 2.5em;
+}
+
+.menu-chico{
+    position: relative;
+    display: none;
+
+}
+.menu-chico ul{
+    
+    background-color: var(--violeta-suave);
+    
+}
+
+
+
+/*
+    media de 780 o más
+*/
+@media (min-width:780px) {
+    
+    /*
+        display none
+    */
+    .fa-bars{
+        display: none;
+    }
+    .menu-chico{
+        display: none;
+    }
+
+
+    .menu-grande-header ul{
+        width: 50%;
+        
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        padding-right: 20px;
+
+    }
+    .menu-grande-header li{
+        margin: 10px;
+    }
+    .menu-grande-header ul li a{
+        font-size: 2.3em;
+        color: var(--letras-titulo);
+        font-weight: 700;
+    }
+
+}
