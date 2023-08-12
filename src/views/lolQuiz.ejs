@@ -6,9 +6,73 @@
     
     <title>LolQuiz</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/d70d29ff66.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="../../styles/menu.css">
+    <link rel="stylesheet" href="../../styles/footer.css">
+    <link rel="stylesheet" href="../../styles/lolQuiz/lolQuiz.css">
+    <link rel="stylesheet" href="../../styles/lolQuiz/quienEs.css">
 </head>
 <body>
+
     <%- include("./partials/menu") %>
+    
+    <main>
+        <div class="modos">
+            <h1 class="title-lolQuiz">LolQuiz</h1>
+
+            <h2 class="subtitle-lolQuiz">Elije el modo</h2>
+        
+            <div class="modos-container">
+
+                <div>
+                    <img src="../../img/lolQuiz-img/adivinaPj.png" alt="Adivina-pj-img">
+                    <h3>Quién es este campeon??</h3>
+                </div>
+                
+                <div>
+                    <img src="../../img/lolQuiz-img/frases-lol.jpg" alt="Frases-lol-img">
+                    <h3>Frases</h3>
+            
+                </div>
+
+                <div>
+                    <img src="../../img/habilidades/AkaliW.webp" alt="">
+                    <h3>Habilidades</h3>
+                </div>
+
+                <div>
+                    <img src="../../img/lolQuiz-img/fotoQuiz.png" alt="">
+                    <h3>Fotos Quiz</h3>
+                </div>
+
+            </div>
+        </div>
+        <div class="quien-es">
+            
+            <h2 class="subtitle-quien-es">Quién es este campeon??</h2>
+            <form class="quien-es-form"  action="#" method="post">
+                
+                <label for="ingreso-campeon">
+                    Ingrese un campeon
+                </label>
+                <div class="container-input-quien-es">
+                    <input type="text" id="ingreso-campeon" name="ingreso-campeon">
+
+                    <button type="submit"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+                </div>
+
+            </form>
+            <div class="container-resultados-quien-es">
+
+            </div>
+        </div>
+        <%- include("./partials/footer.ejs") %>
+
+
+    </main>
+
+
 </body>
 </html>

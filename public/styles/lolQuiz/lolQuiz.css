@@ -1,0 +1,58 @@
+body{
+    background-image: url(../../img/lolQuiz-img/background-img.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.title-lolQuiz{
+    font-size: 5em;
+    text-align: center;
+    
+    margin: 10px;
+}
+
+.subtitle-lolQuiz{
+    text-align: center;
+    font-size: 3em;
+    margin: 20px;
+}
+
+.modos-container{
+    margin: auto;
+
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    width: 650px;
+}
+.modos-container div{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin: 10px;
+
+    background-color: rgba(252, 252, 252, 0.23);
+}
+.modos-container div img{
+    height: 200px;
+    width: 100%;
+
+    border-radius: 5px;
+}
+.modos-container div h3{
+    font-size: 2.5em;
+    height: 100px;
+}
+.modos-container div:hover{
+    box-shadow: 2px 7px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.modos{
+    display: none;
+}

@@ -1,18 +1,6 @@
 /*Root e imports*/
 
-:root{
-    --negro: #000;
-    --lavanda:rgb(230, 230, 250);
-    --violeta-medio:rgb(147, 112, 219);
-    --violeta-oscuro: rgb(102, 51, 153);
-    --violeta-azulado: rgb(138, 43, 226);
-    --dark-orchid: rgb(153, 50, 204);
-    --magenta-oscuro: rgb(139, 0, 139);
-    --violeta-suave: rgb(158, 139, 216);
-    --rojo: #ff0000;
-    --letras-titulo: #fff;
-   
-}
+
 
 
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@800&family=Rubik:ital,wght@0,400;1,700&display=swap');
@@ -45,20 +33,20 @@ main{
 header{
         height: 80px;
         width: 100%;    
+    transition: all 4s;
 
         position: fixed;
 
-        background-color: var(--violeta-suave);
-        border-bottom: 1px solid var(--violeta-oscuro);
+        background-color: var(--fondo-header);
+        border-bottom: 1px solid var(--border-bottom-header);
         
     }
-.titulo{
-    font-family: Circular, Arial, sans-serif;
+.nav-titulo{
         padding-left: 20px;
         font-size: 3em;
         
 }
-.titulo a{
+.nav-titulo a{
     color: var(--letras-titulo);
 }
 .menu-grande-header{
@@ -68,7 +56,7 @@ header{
         align-items: center;
         justify-content: space-between;
         
-       padding-top: 10px;
+        padding-top: 10px;
 
 }
 .fa-bars{
@@ -76,24 +64,44 @@ header{
     color: var(--letras-titulo);
     font-size: 2.5em;
 }
-
 .menu-chico{
-    position: relative;
+    transition: all 4s;
+}
+
+.menu-chico ul{
+    
+    background-color: var(--fondo-header);
+    height: 0;/*100*/
+    transition: all 4s;
+}
+.menu-chico ul li{
+    height: 0px;/*70*/
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.menu-chico ul li a{
+    color:var(--letras-titulo);
+    font-size: 2.5em;
     display: none;
 
 }
-.menu-chico ul{
-    
-    background-color: var(--violeta-suave);
-    
+header:hover .menu-chico ul li a{
+    display: block;
+}
+header:hover .menu-chico li{
+    height: 70px;
+    background-color: var(--fondo-header);
+    border-bottom: 3px solid var(--letras-titulo);
 }
 
-
-
 /*
-    media de 780 o más
+    media de 900 o más
 */
-@media (min-width:780px) {
+@media (min-width:900px) {
     
     /*
         display none
@@ -104,7 +112,9 @@ header{
     .menu-chico{
         display: none;
     }
-
+    header{
+        height:80px;
+    }
 
     .menu-grande-header ul{
         width: 50%;
@@ -117,12 +127,23 @@ header{
 
     }
     .menu-grande-header li{
-        margin: 10px;
+        border-radius: 5px;
+        padding: 10px;
+        transition: all .8s;
+        
     }
+    
     .menu-grande-header ul li a{
         font-size: 2.3em;
         color: var(--letras-titulo);
         font-weight: 700;
+        transition: all .8s;
     }
-
+    .menu-grande-header li:hover{
+        background-color: var(--fondo-header-hover);
+        
+    }
+    .menu-grande-header li:hover a{
+        text-decoration: underline;
+    }
 }

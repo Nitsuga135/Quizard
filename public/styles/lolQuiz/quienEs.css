@@ -1,0 +1,78 @@
+.quien-es{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.subtitle-quien-es{
+    text-align: center;
+    font-size: 3em;
+    margin: 10px;
+}
+.quien-es-form{
+    width: 400px;
+    height: 130px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+
+}
+.quien-es-form label{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.quien-es-form .container-input-quien-es{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quien-es-form input{
+    width: 340px;
+    height: 50px;
+
+    padding-left: 10px ;
+
+    font-weight: bold;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px ;
+    border: 1px solid black;
+  
+   
+
+    &:active {
+        border: 0;
+    } &:focus {
+        border: 0;
+    }
+    
+}
+.quien-es-form button{
+    height: 50px;
+    width: 40px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: rgb(60, 0, 255);
+    border: 1px solid black;
+
+    background-image: radial-gradient(
+        circle at right bottom ,
+        red 0%,
+        orange 40%,
+        red 100%
+    );
+}
+.quien-es-form button i{
+    color: #fff;
+}
+.container-resultados-quien-es{
+    width: 900px;
+    height: 400px;
+
+
+}

@@ -1,10 +1,36 @@
+
+:root{
+    /*Global*/
+    --negro: #000;
+    
+    /*MENU*/
+    
+    /*Menu index*/
+    
+    --violeta-medio:rgb(147, 112, 219);
+    --violeta-oscuro: rgb(102, 51, 153);
+    --border-bottom-header: rgb(138, 43, 226);
+    
+    --magenta-oscuro: rgb(139, 0, 139);
+    --fondo-header: rgb(158, 139, 216);
+    --letras-titulo: #fff;
+    --fondo-header-hover: rgb(132, 113, 187);
+
+    
+
+    /*index*/
+    --body-background:rgb(230, 230, 250);
+    --title-index: rgb(153, 50, 204);
+    
+}
+
 body{
-    background-color: var(--lavanda);
+    background-color: var(--body-background);
 }
 .titulo-main-index{
     margin: auto;
 
-    color: var(--dark-orchid);
+    color: var(--title-index);
 
     
     text-align: center;
@@ -29,31 +55,65 @@ body{
     align-content: space-around;
     flex-wrap: wrap;
 
-    width: 900px;
-    margin: 0 auto;
+    width: 100%;
+    margin: 30px auto;
 }
 .container-juegos-main a{
-    height: 400px;
-    width: 400px;
-    display: flex;
-    justify-content: center;
+    height: 300px;
+    width: 300px;
     margin: 10px;
-    flex-wrap: wrap;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: all .5s;
 }
 .container-juegos-main a img{
-    width: 360px;
-    height: 360px;
+    width: 80%;
+    height: 80%;
     margin: auto;
+    transition: all .5s;
+    
 }
 .container-juegos-main a p{
     text-align: center;
     font-size: 1.5em;
     font-weight: bold;
+    padding-bottom: 10px;
+    transition: all .5s;
 }
 
 /*Hovers*/
 .container-juegos-main a:hover{
     box-shadow: 2px 7px 2px 2px rgba(0, 0, 0, 0.5);
-     border-radius: 5px;
+    border-radius: 5px;
+  
+}
+.container-juegos-main a:hover img{
+    width: 85%;
+    height: 85%;
+    position: relative;
+    top: -20px;
+}
+.container-juegos-main a:hover p{
+    font-size: 1.8em;
+}
+@media (min-width:900px){
+    .container-juegos-main{
+          
+        width: 900px;
+        margin: 0 auto;
+    }
+    .container-juegos-main a{
+        height: 400px;
+        width: 400px;
+        
+        margin: 10px;
+    
+    }
+    .container-juegos-main a img{
+        width: 360px;
+        height: 360px;
+    }
 }
