@@ -18,9 +18,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-
-
 }
 .quien-es-form label{
     text-align: center;
@@ -57,22 +54,52 @@
     width: 40px;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
-    background-color: rgb(60, 0, 255);
     border: 1px solid black;
 
     background-image: radial-gradient(
         circle at right bottom ,
-        red 0%,
-        orange 40%,
-        red 100%
+        var(--button-quien-es-primero) 0%,
+        var(--button-quien-es-segundo) 40%,
+        var(--button-quien-es-tercero) 100%
     );
 }
 .quien-es-form button i{
-    color: #fff;
+    color: var(--quien-es-button-i);
 }
 .container-resultados-quien-es{
     width: 900px;
     height: 400px;
 
+    
+}
 
+.restart-container{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 270px;
+}
+.restart-container button{
+    background-image: radial-gradient(
+        circle at right bottom ,
+        var(--button-quien-es-primero) 0%,
+        var(--button-quien-es-segundo) 40%,
+        var(--button-quien-es-tercero) 100%
+    );
+
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+
+    border:1px solid black;
+    border-radius: 5px;
+
+    height: 60px;
+    width: 120px;
+}
+.restart-container button:hover{
+    box-shadow: 2px 2px 2px black;
+}
+.quien-es{
+    
 }

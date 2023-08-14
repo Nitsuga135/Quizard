@@ -1,0 +1,6 @@
+.container-foto-quiz{
+    max-width: 150px;
+    max-height: 150px;
+
+    overflow: hidden;
+}

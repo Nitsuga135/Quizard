@@ -12,11 +12,13 @@
     --border-bottom-header: rgb(138, 43, 226);
     
     --magenta-oscuro: rgb(139, 0, 139);
-    --fondo-header: rgb(158, 139, 216);
     --letras-titulo: #fff;
     --fondo-header-hover: rgb(132, 113, 187);
 
-    
+    --color-inicial-header:rgb(158, 139, 216);
+    --color-segundo-header:rgb(158, 139, 216);
+    --color-tercero-header:rgb(158, 139, 216);
+    --color-final-header:rgb(158, 139, 216);
 
     /*index*/
     --body-background:rgb(230, 230, 250);

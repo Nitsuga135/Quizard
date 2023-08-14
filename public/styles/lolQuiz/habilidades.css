@@ -1,0 +1,12 @@
+.img-habilidades-descubrir{
+    width: 150px;
+    height: 150px;
+
+    
+}
+#habilidades{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}

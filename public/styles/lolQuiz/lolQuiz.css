@@ -1,3 +1,19 @@
+:root{
+    /*Index colors*/
+
+    --fondo-modos:rgba(252, 252, 252, 0.23);
+    --modos-container-div-hover-shadow:rgba(0, 0, 0, 0.5);
+
+    /*Quien es*/
+    --button-quien-es-primero:#ff0000;
+    --button-quien-es-segundo:#ffa500;
+    --button-quien-es-tercero:#ff0000;
+
+    --quien-es-button-i:#fff;
+
+    /*Frases lol*/
+}
+
 body{
     background-image: url(../../img/lolQuiz-img/background-img.jpeg);
     background-repeat: no-repeat;
@@ -38,7 +54,7 @@ body{
 
     margin: 10px;
 
-    background-color: rgba(252, 252, 252, 0.23);
+    background-color: var(--fondo-modos);
 }
 .modos-container div img{
     height: 200px;
@@ -49,10 +65,10 @@ body{
 .modos-container div h3{
     font-size: 2.5em;
     height: 100px;
+    text-align: center;
 }
 .modos-container div:hover{
-    box-shadow: 2px 7px 2px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 7px 2px 2px var(--modos-container-div-hover-shadow);
 }
 .modos{
-    display: none;
 }

@@ -1,0 +1,15 @@
+:root{
+    --violeta-medio:rgb(147, 112, 219);
+    --violeta-oscuro: rgb(102, 51, 153);
+    --border-bottom-header: none;
+    
+    --magenta-oscuro: rgb(139, 0, 139);
+    --fondo-header: rgb(233, 128, 47);
+    --letras-titulo: #fff;
+    --fondo-header-hover: #ff990055;
+
+    --color-inicial-header:#ff0000;
+    --color-segundo-header:#ee82ee;
+    --color-tercero-header:#ffa500;
+    --color-final-header:#ff0000;
+}

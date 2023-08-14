@@ -1,0 +1,81 @@
+.frases{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+h2{
+    text-align: center;
+    font-size: 3em;
+    margin: 10px;
+}
+h3{
+    text-align: center;
+    font-size: 2em;
+}
+
+.frases form{
+    width: 400px;
+    height: 130px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.frases form label{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.frases form .container-input-frases{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.frases-form input{
+    width: 340px;
+    height: 50px;
+
+    padding-left: 10px ;
+
+    font-weight: bold;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px ;
+    border: 1px solid black;
+  
+   
+
+    &:active {
+        border: 0;
+    } &:focus {
+        border: 0;
+    }
+}
+.frases-form button{
+    height: 50px;
+    width: 40px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: 1px solid black;
+
+    background-image: radial-gradient(
+        circle at right bottom ,
+        var(--button-quien-es-primero) 0%,
+        var(--button-quien-es-segundo) 40%,
+        var(--button-quien-es-tercero) 100%
+    );
+}
+.frases-form button i{
+    color: var(--quien-es-button-i);
+}
+.container-resultados-frases{
+    width: 900px;
+    height: 400px;
+
+    
+}

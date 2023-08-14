@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>LolQuiz</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/d70d29ff66.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../../styles/menu.css">
+    <link rel="stylesheet" href="../../../styles/lolQuiz/menu-colors.css">
+    <link rel="stylesheet" href="../../styles/footer.css">
+    <link rel="stylesheet" href="../../styles/lolQuiz/lolQuiz.css">
+    <link rel="stylesheet" href="../../styles/lolQuiz/quienEs.css">
+    <link rel="stylesheet" href="../../../styles/lolQuiz/frases-lol.css">
+    <link rel="stylesheet" href="../../styles/lolQuiz/habilidades.css">
+    <link rel="stylesheet" href="../../styles/lolQuiz/fotos.css">
+
+</head>
+<body>
+
+    <!--Menu-->
+
+    <%- include("../partials/menu") %>
+
+    <!--Menu inicial juego-->
+    <main>
+        <div class="modos">
+            <h1 class="title-lolQuiz">LolQuiz</h1>
+
+            <h2 class="subtitle-lolQuiz">Elije el modo</h2>
+        
+            <div class="modos-container">
+
+                <div>
+                    <img src="../../img/lolQuiz-img/adivinaPj.png" alt="Adivina-pj-img">
+                    <h3>Quién es este campeon??</h3>
+                </div>
+                
+                <div>
+                    <img src="../../img/lolQuiz-img/frases-lol.jpg" alt="Frases-lol-img">
+                    <h3>Frases</h3>
+            
+                </div>
+
+                <div>
+                    <img src="../../img/habilidades/AkaliW.webp" alt="">
+                    <h3>Habilidades</h3>
+                </div>
+
+                <div>
+                    <img src="../../img/lolQuiz-img/fotoQuiz.png" alt="">
+                    <h3>Fotos Quiz</h3>
+                </div>
+
+            </div>
+        </div>
+        <!--Modos de juego-->
+        <%- include("./quienEs.ejs") %>
+        
+        <%- include("./frases-lol.ejs")  %>
+
+        <%- include("./habilidades.ejs")  %>
+
+        <%- include("./fotos.ejs")  %>
+
+        
+        <!--Footer-->
+
+        <%- include("../partials/footer.ejs") %>
+
+        
+
+
+    </main>
+
+
+</body>
+</html>

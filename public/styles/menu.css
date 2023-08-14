@@ -33,11 +33,19 @@ main{
 header{
         height: 80px;
         width: 100%;    
-    transition: all 4s;
+        transition: all 4s;
+
+        background-image: radial-gradient(
+            circle at right bottom ,
+            var(--color-inicial-header) 0%,
+            var(--color-segundo-header) 40%,
+            var(--color-tercero-header) 80%,
+            var(--color-final-header) 100%
+        );
 
         position: fixed;
+        z-index: 1;
 
-        background-color: var(--fondo-header);
         border-bottom: 1px solid var(--border-bottom-header);
         
     }
