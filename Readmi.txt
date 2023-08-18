@@ -5,18 +5,14 @@ Que es?
 Quizard es un juego de trivia de League of Legends y Pokémon 
 el cual cuenta con una base de información de campeones en la cual
 uno puede consultar sobre los distintos personajes del ambos juegos.
-El mismo es un proyecto sin fines de lucro con la finalidad de practicar 
-desarrollo web y a su vez crear un juego entretenido.
+El mismo es un proyecto sin fines de lucro con la finalidad de practicar desarrollo web y a su vez crear un juego entretenido.
 
 Documentación
 
-Este proyecto contara con un sistema de ruteo encargado de manejar 
-las vistas dentro del programa y un conjunto de scripts para manejar el 
-fornt del mismo.
+Este proyecto contara con un sistema de ruteo encargado de manejar las vistas dentro del programa y un conjunto de scripts para manejar el fornt del mismo.
 
 Scripts del Front
 
 modeControl.js:
 
-El mismo se encargara de permitir al usuario cambiar el
- modo del juego y el personaje al cual uno debe buscar
+El mismo se encargara de permitir al usuario cambiar el modo del juego, volver al menu principal y cambiar el personaje al cual uno debe buscar.

@@ -89,8 +89,5 @@ for(i = 0; i < nextLv.length; i++){
     }
    
 
-    //hacer qselector all de containers y con eso sumar uno en el juego
-    //y con eso cambiar al clickear y en menu principal lo mismo
-
-
+  
     
